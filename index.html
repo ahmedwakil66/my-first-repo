@@ -5,8 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My FIrst Repository</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body{background-color: lightgray;}
+        progress[value]{
+            appearance: none;
+            border: none;
+            border-radius: 2px;
+            color: red;
+        }
+        
+        /*===NAV WITH NESTING NAV STARTS HERE===*/
+        nav > ul {display: flex;}
+        nav li{
+            list-style-type: none; margin: 1rem 1rem; border-radius: 1px;
+            border: 1px solid white; min-width: max-content;
+        }
+        nav a{
+            text-decoration: none; color: blueviolet;
+            padding: .5rem 1rem;
+        }
+        nav li:hover{background-color: white;}
+
+        .dropdown{
+                display: none; background-color: rgb(0, 0, 0);
+                position: absolute; border-radius: 2px;
+        }
+        nav li:hover > .dropdown{display: block;}
+
+        /*===  ===*/
+    </style>
 </head>
 <body>
-    
+    <h1>progress </h1>
+    <label for="file">Typing skill</label>
+    <progress id="file" value="80" max="100"></progress>
+    <br> <progress></progress> <br> <br> <br>
+
+    <nav>
+        <ul>
+            <li><a href="#">one</a></li>
+            <li><a href="#">two</a></li>
+            <li>
+                <a href="#">three »</a>
+                <ul class="dropdown">
+                    <li><a href="#">one</a></li>
+                    <li><a href="#">two</a></li>
+                    <li>
+                        <a href="#">three »</a>
+                        <ul class="dropdown">
+                            <li><a href="#">one</a></li>
+                            <li><a href="#">two</a></li>
+                            <li>
+                                <a href="#">three »</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">one</a></li>
+                                    <li><a href="#">two</a></li>
+                                    <li><a href="#">three »</a></li>
+                                    <li><a href="#">four</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">four</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">four</a></li>
+                </ul>
+            </li>
+            <li><a href="#">four</a></li>
+        </ul>
+    </nav>
+<br>
+    <div title="this is a div" style="margin: 1rem; background-color: gray;">
+        <p>ho ho</p>
+        <p>la la</p>
+        <p>va va</p>
+    </div>
+
 </body>
 </html>
