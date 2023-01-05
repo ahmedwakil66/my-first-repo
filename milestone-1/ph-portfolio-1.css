@@ -223,8 +223,8 @@ header {
 }
 
 .eduex {
-    margin-bottom: 20px;
-    margin-top: 24px;
+    margin-bottom: 25px;
+    margin-top: 27px;
 }
 
 .education-experience-container {
@@ -284,21 +284,19 @@ footer form{
     margin-top: 25px;
 }
 
-footer input[type='text'], footer input[type='email']{
+footer input[type='text'], footer input[type='email'], footer textarea{
     width: 100%;
     height: 64px;
     margin-bottom: 24px;
     padding: 18px 30px;
+    border: none;
+    border-radius: 5px;
     color: var(--black-transparent);
 }
 
 footer textarea{
-    width: 100%;
     height: 180px;
-    margin-bottom: 24px;
-    padding: 18px 30px;
     resize: none;
-    color: var(--black-transparent);
 }
 
 .social-description{
