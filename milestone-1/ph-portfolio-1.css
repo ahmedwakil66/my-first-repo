@@ -14,11 +14,34 @@
 .title-2 {
     font-size: 35px;
     font-weight: 700;
-    text-align: center;
+}
+
+.title2-2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.title2-3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.title-3 {
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .text-primary {
     color: var(--orange);
+}
+
+.text-normal {
+    color: var(--black-transparent);
+    font-size: 18px;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .btn-primary {
@@ -29,6 +52,7 @@
     font-weight: 700;
     padding: 18px 35px;
     border-radius: 5px;
+    cursor: pointer;
     background: var(--orange);
 }
 
@@ -40,6 +64,7 @@
     font-size: 20px;
     font-weight: 700;
     padding: 15px 35px;
+    cursor: pointer;
     border-radius: 5px;
 }
 
@@ -80,6 +105,7 @@ nav li {
     list-style-type: none;
     margin-left: 50px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 /* Header BANNER Starts Here */
@@ -127,23 +153,156 @@ header {
     margin-top: 130px;
 }
 
-.about p {
+.about-description {
     color: var(--black-transparent);
     font-size: 18px;
     text-align: center;
     margin: 30px 0;
 }
 
-.about table {
-    margin: 0 auto;
+.about-info {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about-info p {
     text-align: center;
 }
 
-.about table th,
-.about table td {
-    min-width: 161px;
+.about-info h3 {
+    color: var(--black-light);
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
 }
 
-.about table td {
+/* MAIN WHAT I DO Starts Here */
+.what-i-do {
+    margin-top: 100px;
+}
+
+.what-i-do p {
+    max-width: 910px;
+    margin: 24px auto 50px;
+}
+
+/* MAIN SKILL CARDS Starts Here */
+@media screen and (max-width:1000px) {
+    .container {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .cards-container,
+    .education-experience-container {
+        flex-wrap: wrap;
+    }
+}
+
+.cards-container {
+    display: flex;
+    gap: 24px;
+}
+
+.card {
+    padding: 30px;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+}
+
+.card h4 {
+    padding-top: 27px;
+    padding-bottom: 17px;
+}
+
+/* MAIN EDUCATION EXPERIENCE Starts Here */
+.summary-container {
+    margin-top: 130px;
+}
+
+.eduex {
+    margin-bottom: 20px;
+    margin-top: 24px;
+}
+
+.education-experience-container {
+    display: flex;
+    gap: 24px;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+.eduex-title {
+
+    margin-bottom: 7px;
+}
+
+.eduex-container-title,
+.eduex-title {
+    color: var(--black-light);
+}
+
+.eduex-description {
+    margin-top: 20px;
+}
+
+.eduex-sub-title,
+.eduex-description {
     color: var(--black-transparent);
+}
+
+hr.eduex-hr {
+    border: 1px solid var(--black-transparent);
+    opacity: .5;
+}
+
+/* ===== FOOTER Starts Here ===== */
+footer{
+    background: #FFF8F3;
+    padding: 130px 0;
+}
+
+.footer-container{
+    display: flex;
+    gap: 110px;
+    justify-content: space-between;
+}
+
+.footer-container div{
+    flex: 1 1 0;
+}
+
+footer img{
+    display: inline-block;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+footer form{
+    margin-top: 25px;
+}
+
+footer input[type='text'], footer input[type='email']{
+    width: 100%;
+    height: 64px;
+    margin-bottom: 24px;
+    padding: 18px 30px;
+    color: var(--black-transparent);
+}
+
+footer textarea{
+    width: 100%;
+    height: 180px;
+    margin-bottom: 24px;
+    padding: 18px 30px;
+    resize: none;
+    color: var(--black-transparent);
+}
+
+.social-description{
+    color: var(--black-transparent);
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
