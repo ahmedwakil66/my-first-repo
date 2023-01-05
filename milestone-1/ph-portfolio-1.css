@@ -6,8 +6,15 @@
 }
 
 .title-1 {
+    color: var(--black);
     font-size: 45px;
     font-weight: 800;
+}
+
+.title-2 {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
 }
 
 .text-primary {
@@ -54,13 +61,14 @@
     --black: #181818;
     --black-light: #474747;
     --black-transparent: #757575;
-
+    --background-primary: #FFF8F3;
 }
 
 /* Header NAV Starts Here */
 nav {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 46px;
 }
 
 nav ul {
@@ -75,6 +83,18 @@ nav li {
 }
 
 /* Header BANNER Starts Here */
+header {
+    background: var(--background-primary);
+    padding-top: 51px;
+}
+
+.header-background {
+    background-image: url(images/header_bg.png), url(images/developer.png);
+    background-repeat: no-repeat;
+    background-position: bottom right, 5% 0%;
+    background-size: auto, 5.9%;
+}
+
 .banner {
     display: flex;
     align-items: center;
@@ -98,4 +118,32 @@ nav li {
     color: var(--black-transparent);
     font-size: 18px;
     margin-bottom: 30px;
+}
+
+/* MAIN ABOUT Starts Here */
+.about {
+    padding: 131px 157px;
+    background: var(--background-primary);
+    margin-top: 130px;
+}
+
+.about p {
+    color: var(--black-transparent);
+    font-size: 18px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.about table {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about table th,
+.about table td {
+    min-width: 161px;
+}
+
+.about table td {
+    color: var(--black-transparent);
 }
