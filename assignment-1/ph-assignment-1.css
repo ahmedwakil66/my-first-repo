@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    margin-left: 230px;
+    margin-right: 230px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.mb-130{
+    margin-bottom: 130px;
+}
+
+.btn-primary {
+    background-color: #F15B22;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    width: 170px;
+    height: 64px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.btn-secondary{
+    background-color: white;
+    color: #F15B22;
+    font-size: 20px;
+    font-weight: 600;
+    width: 170px;
+    height: 64px;
+    border-radius: 5px;
+    border: 0;
+}
+
+section p{
+    color: #444343;
+}
+
+h1{
+    font-size: 65px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+
+}
+/* Header Starts Here */
+header {
+    background: url('images/banner/banner2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 809px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding-top: 5px;
+
+}
+
+nav .logo {
+    display: block;
+    color: #444343;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #444343;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+nav .logo:hover {
+    color: black;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: black;
+    text-decoration: line-through;
+}
+
+.banner-main {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    border-top: 1px solid;
+    height: 500px;
+
+}
+
+.banner {
+    text-align: right;
+}
+
+/* Header ends Here */
+
+
+/* Failure Section Starts Here */
+.failure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.check-message {
+    margin-bottom: 10px;
+}
+
+
+/* Plans and Card Section Starts Here */
+.plans{
+    display: flex;
+    justify-content: space-between;
+}
+
+.plans h3{
+    margin: 16px 0;
+}
+
+.card p{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* Mindset Section Starts Here */
+.mindset{
+    background: url('images/watch.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mindset-gradient{
+    background: url('images/gradient2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 301px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 64px;
+}
+
+
+/* Footer Starts Here */
+footer{
+    background-color: black;
+    padding: 130px 0;
+}
+
+.footer{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer img{
+    margin-right: 15px;
+}
+
+.footer input{
+    display: block;
+    min-width: 325px;
+    height: 64px;
+    padding-left: 10px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 2px;
+    color: white;
+}
