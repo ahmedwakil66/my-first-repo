@@ -64,7 +64,7 @@ header {
     background: url('images/banner/banner2.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 809px;
+    height: 100vh;
 }
 
 nav {
@@ -110,7 +110,7 @@ nav a:hover {
     justify-content: end;
     align-items: end;
     border-top: 1px solid;
-    height: 500px;
+    height: 600px;
 
 }
 
