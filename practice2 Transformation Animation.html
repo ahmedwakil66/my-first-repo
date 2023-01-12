@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body {
+            background-color: lightgray;
+        }
+
+        .mini {
+            width: 150px;
+            padding: 5px 10px;
+            border: 1px solid;
+        }
+
+        .m-text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transform: rotate(-20deg);
+        }
+
+        /* Trans starts here */
+        .trans {
+            background-color: rgba(0, 255, 255, 0.823);
+            cursor: pointer;
+            width: 140px;
+            height: 140px;
+            padding: 1rem;
+            text-align: center;
+            transition: transform 2s 2s, color 1s .7s, background 1s .5s, border-radius 1.1s .2s;
+        }
+
+        .trans:hover {
+            transform: scale(1.5) rotate(180deg) translateX(-100px);
+            color: wheat;
+            background: rgba(0, 0, 0, 0.827);
+            border-radius: 5px;
+        }
+
+        /* Trans ends here */
+
+        /* Stage starts here */
+        .stage{
+            width: 700px;
+            height: 300px;
+            border-radius: 5px;
+            background-color: lightcoral;
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border-radius: 50%;
+            position: relative;
+            animation: ballAnim 2s ease-in-out .3s infinite alternate;
+            animation-play-state: running;
+        }
+
+        @keyframes ballAnim {
+            0%{
+                top: 0;
+                left: 0;
+                background-color: black;
+                border: 0px solid;
+
+            }
+            50%{
+                top: 200px;
+                left: 600px;
+                background-color: blueviolet;
+                border: 2px solid;
+            }
+            100%{
+                top: 0;
+                left: 0;
+                background-color: black;
+                border: 0px solid;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mini">
+        <p class="m-text" title="hello i am wakil ahmed and i have something to tell you">hello i am wakil ahmed and i
+            have something to tell you</p>
+    </div>
+    <p class="x-text" style="white-space: nowrap;">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam explicabo distinctio perferendis eius
+        molestias iusto placeat illo? Magnam pariatur voluptates aliquid neque quasi natus dolorum, doloremque corporis
+        quibusdam provident vel consectetur ut excepturi non officia unde soluta a laboriosam dignissimos quis velit
+        quas tempora esse? Iure hic et obcaecati aspernatur, reiciendis repellat rem vel sit deleniti nesciunt
+        cupiditate! Quo asperiores, dolor laudantium consequuntur numquam esse alias. Voluptas natus culpa molestias
+        similique consectetur. Eligendi sit, corporis possimus cum a fugiat debitis omnis. Non, vero. Sapiente ipsa,
+        minus exercitationem esse laboriosam, ab est quasi neque itaque, optio tempora reiciendis voluptas dolorem
+        architecto.
+    </p>
+
+    <p class="trans">
+        hi i am a <br> <b>paragraph</b> <br> i will change my shape if you <b>hover</b> on me!
+    </p>
+
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>

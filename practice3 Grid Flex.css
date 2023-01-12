@@ -1,0 +1,102 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* CALENDER Design Starts Here */
+.calender {
+    max-width: fit-content;
+    border: 1px solid gray;
+    border-radius: 1px;
+    margin: 10px;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calender-head {
+    grid-column: 1/8;
+}
+
+.date,
+.day {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: alias;
+}
+
+.day {
+    font-weight: 700;
+}
+
+.other-month,
+.day,
+.calender-head {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.date:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+/* CALENDER Design Ends Here */
+
+
+
+/* Grid play1 styles starts here */
+.header{grid-area: header;}
+.nav{grid-area: nav;}
+.main{grid-area: main;}
+.aside{grid-area: aside;}
+.adv{grid-area: adv}
+.footer{grid-area: footer;}
+
+.header, .nav, .main, .aside, .adv, .footer{
+    background-color: bisque;
+    padding: 10px;
+}
+
+.grid-container{
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+    'header'
+    'nav'
+    'main'
+    'aside'
+    'adv'
+    'footer'
+    ;
+    
+}
+
+@media screen and (min-width: 576px) {
+    .nav ul{display: flex; justify-content: space-around;}
+    .grid-container{
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas: 
+        "header header"
+        "nav    nav"
+        "aside  main"
+        "adv footer"
+        ;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .grid-container{
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+        grid-template-areas: 
+        "header header header header"
+        "nav     main   main aside"
+        "nav    main    main adv"
+        "footer footer footer footer"
+        ;
+    }
+}
