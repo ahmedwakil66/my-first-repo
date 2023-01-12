@@ -68,18 +68,6 @@
     border-radius: 5px;
 }
 
-@media screen and (min-width: 1600px) {
-    .container {
-        margin-left: 230px;
-        margin-right: 230px;
-    }
-
-    .banner-text {
-        margin-right: 163px;
-    }
-
-    /* !!! .banner-text is explicitly just for Header BANNER Texts*/
-}
 
 :root {
     --orange: #FD6E0A;
@@ -146,7 +134,7 @@ header {
     margin-bottom: 30px;
 }
 
-/* MAIN ABOUT Starts Here */
+/* MAIN ABOUT Me Starts Here */
 .about {
     padding: 131px 157px;
     background: var(--background-primary);
@@ -189,18 +177,6 @@ header {
 }
 
 /* MAIN SKILL CARDS Starts Here */
-@media screen and (max-width:1000px) {
-    .container {
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-    .cards-container,
-    .education-experience-container {
-        flex-wrap: wrap;
-    }
-}
-
 .cards-container {
     display: flex;
     gap: 24px;
@@ -303,4 +279,92 @@ footer textarea{
     color: var(--black-transparent);
     margin-top: 20px;
     margin-bottom: 30px;
+}
+
+
+
+/* Making things responsive */
+@media screen and (min-width: 1200px) {
+    .container {
+        margin-left: 230px;
+        margin-right: 230px;
+    }
+
+    .banner-text {
+        margin-right: 163px;
+    }
+
+    /* !!! .banner-text is explicitly just for Header BANNER Texts*/
+}
+
+@media screen and (max-width: 1199px) {
+    .header-background{background-image: none; padding-bottom: 2rem;}
+    .banner{
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    
+    .about{
+        padding: 100px 100px;
+    }
+
+    .about-info > article{
+        flex: 45%;
+        margin-top: 1rem;
+    }
+    .container{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .cards-container, .education-experience-container{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        flex: 45%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header nav{
+        flex-direction: column;
+    }
+    .ml-0{margin-left: 0;}
+
+    .about{
+        padding: 30px 30px;
+    }
+
+    .about-info > article{
+        flex: 95%;
+        margin-top: 1rem;
+    }
+
+    .container {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .cards-container,
+    .education-experience-container {
+        flex-wrap: wrap;
+    }
+
+    .footer-container{
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    nav li:not(:first-child){margin-left: 10px;}
+
+    .banner img{
+        width: 100%;
+    }
+
+    .btn-secondary{
+        margin-top: 10px;
+        margin-left: 0px !important;
+    }
 }
