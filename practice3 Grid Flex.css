@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 } */
-
 /* CALENDER Design Starts Here */
 .calender {
     max-width: fit-content;
@@ -99,4 +98,63 @@
         "footer footer footer footer"
         ;
     }
+}
+
+
+
+/* FLex-1c and Grid-1c starts here */
+.flex-1c{
+    display: flex;
+}
+.flex-1c > div {
+    border: 1px solid;
+    flex-basis: 0%;
+    flex-grow: 1;
+}
+
+.grid-1c{
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 40%));
+    grid-auto-rows: 1fr;
+}
+.grid-1c > div{
+    border: 1px solid;
+}
+
+@media screen and (max-width: 576px) {
+    .grid-1c{
+        grid-auto-rows: auto;
+    }
+}
+
+/* @media screen and (min-width: 700px) {
+    .grid-1c{
+        grid-auto-flow: row;
+        grid-auto-rows: 1fr;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hide{
+    display: none;
 }
