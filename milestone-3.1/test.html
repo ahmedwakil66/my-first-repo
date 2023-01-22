@@ -3,101 +3,66 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Biker Zone</title>
     <!-- Fontawesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap styles -->
     <link rel="stylesheet" href="bootstrap-5.3.0.css">
     <style>
-      
+      header{position: relative;}
+      header::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+     
     </style>
   </head>
   <body>
 
   <div class="container-lg">
      <!-- Header Starts here -->
-    <header>
+    <header class="" style="background-image: url('images/bike-1.png'); height: 80vh; background-size: cover; background-position: center;">
 
       <!-- NavBar Starts -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fw-semibold text-center">
+      <nav class="navbar navbar-expand-lg fw-semibold">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">CraftAwesome</a>
+            <a class="navbar-brand text-white" href="#">CraftAwesome</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <i class="fa-solid fa-bars text-white"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto me-lg-5 mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link  text-white active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Bikes</a>
+                  <a class="nav-link  text-white" href="#">Bikes</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Gallery</a>
+                  <a class="nav-link  text-white" href="#">Gallery</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Stores</a>
+                  <a class="nav-link  text-white" href="#">Stores</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link">Ratings</a>
+                  <a class="nav-link  text-white">Ratings</a>
                 </li>
               </ul>
-                <button class="btn btn-dark fw-bold px-4 py-2">Login</button>
+                <button class="btn btn-light fw-bold px-4 py-2">Login</button>
             </div>
           </div>
       </nav> <!-- NavBar Ends -->
 
-      <!-- Banner Slider Starts -->
-      <div id="carouselExample" class="carousel slide bg-danger bg-opacity-10 p-5">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row row-cols-md-2 row-gap-3 align-items-center">
-                  <div>
-                      <h1>Ride-on AK-47 V3 with Smile</h1>
-                      <p>This bike is given the name ak-47 Lorem ipsum, dolor sit amet consectetur adipisicing elitepack. Ipsa, dolores. dolor sit amet consectetur adipisicing elitepack. Ipsa, dolores</p>
-                      <button class="btn btn-danger">Purchase</button>
-                  </div>
-                  <div>
-                      <img src="images/bike-1.png" class="d-block w-100">
-                  </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row row-cols-md-2 row-gap-3 align-items-center">
-                <div>
-                    <h1>Ride-on MK-33 V5 with Smile</h1>
-                    <p>This bike is given the name ak-47 Lorem ipsum, dolor sit amet consectetur adipisicing elitepack. Ipsa, dolores. dolor sit amet consectetur adipisicing elitepack. Ipsa, dolores</p>
-                    <button class="btn btn-danger">Purchase</button>
-                </div>
-                <div>
-                    <img src="images/bike-2.png" class="d-block w-100">
-                </div>
-            </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row row-cols-md-2 row-gap-3 align-items-center">
-                <div>
-                    <h1>Ride-on GK-45 V2 with Smile</h1>
-                    <p>This bike is given the name ak-47 Lorem ipsum, dolor sit amet consectetur adipisicing elitepack. Ipsa, dolores. dolor sit amet consectetur adipisicing elitepack. Ipsa, dolores</p>
-                    <button class="btn btn-danger">Purchase</button>
-                </div>
-                <div>
-                    <img src="images/bike-3.png" class="d-block w-100">
-                </div>
-            </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bg-dark bg-opacity-10 rounded-circle" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon  bg-dark bg-opacity-10 rounded-circle" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+      <div class="banner-text text-white text-center lh-lg position-absolute top-50 start-50 translate-middle">
+        <h1>This is a Awesome Bike</h1>
+        <h3>Try and see for yourself</h3>
+        <h5>A power that you can not ignore</h5>
+        <p style="letter-spacing: 4px;" class="fw-semibold">Yeah! It is that good!</p>
       </div>
-
+    
     </header> <!-- Header Ends here -->
 
   <!-- Main Starts -->

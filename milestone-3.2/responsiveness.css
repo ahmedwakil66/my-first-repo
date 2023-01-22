@@ -1,0 +1,202 @@
+@media screen and (min-width: 768px) {
+    .banner {
+        padding: 0 1rem;
+        display: flex;
+        gap: 13px;
+        max-width: 1296px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .banner_img{
+        order: 2;
+    }
+    .banner_title{
+        font-size: 40px;
+        line-height: 53px;
+    }
+    .banner_description{
+        margin: 20px 0;
+    }
+    .banner_img {
+        position: relative;
+        top: 30px;
+    }
+    /* features section */
+    .features{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* great-tea section */
+    .great-tea{
+        display: flex;
+        gap: 50px;
+    }
+    .great-tea > *{
+        flex: 1;
+    }
+    .great-tea_banner{
+        order: -1;
+    }
+
+    /* clients starts */
+    .clients{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 70px;
+    }
+
+    .clients-text{
+        flex: 40%;
+    }
+
+    .clients-banner{
+        flex: 60%;
+    }
+    .clients-card {
+        width: 265px;
+        margin-left: auto;
+        padding: 24px 26px 18px 35px;
+    }
+    
+    .clients-card-3{
+        left: 23%;
+    }
+
+    .clients-card_img{
+        top: -30%;
+        left: -27%;
+    }
+
+    /* events cards section */
+    .events-cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .events-cards img{
+        width: 100%;
+    }
+
+    /* footer */
+    .footer{
+        grid-template-areas: 
+        'foot-1 foot-2'
+        'foot-3 foot-4'
+        'foot-5 foot-6'
+        'foot-7 foot-7';
+    }
+}
+
+
+
+@media screen and (min-width: 992px) {
+    .banner_title{
+        font-size: 47px;
+        line-height: 65px;
+    }
+    .banner_img {
+        top: 50px;
+    }
+    /* features section */
+    .features{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* clients cards */
+    .clients-card {
+        width: 350px;
+        margin-left: auto;
+        padding: 41px 42px 32px 50px;
+    }
+    .clients-card-3{
+        left: 20%;
+    }
+    .clients-card_img{
+        top: -42%;
+        left: -27%;
+    }
+    .footer{
+        grid-template-areas: 
+        'foot-1 foot-1 foot-2 foot-2'
+        'foot-3 foot-4 foot-5 foot-6'
+        'foot-7 foot-7 foot-7 foot-7';
+    }
+}
+
+
+
+
+@media screen and (min-width: 1150px) {
+    .banner{
+        width: 1196px;
+    }
+    .banner_title{
+        font-size: 60px;
+        line-height: 80px;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .banner{
+        width: 1296px;
+    }
+    .banner_title{
+        font-size: 70px;
+        line-height: 90px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .container, footer{
+        margin-top: 70px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    .banner{
+        text-align: center;
+    }
+    .banner_img{
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner_description{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner_img_rating{
+        display: none;
+    }
+
+    .great-tea{
+        text-align: center;
+    }
+
+    .great-tea_banner{
+        margin: 50px auto 0;
+    }
+
+    /* clients cards */
+    .clients{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .clients-card {
+        width: 245px;
+        margin-left: auto;
+        padding: 17px 18px 12px 20px;
+    }
+    .clients-cards{
+        width: 375px;
+        margin: 2rem auto 0;
+    }
+
+    .clients-card_img{
+        bottom: 0;
+        right: 0px;
+    }
+    
+}
