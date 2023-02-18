@@ -74,7 +74,7 @@ function random255() {
 function validation(reference) {
     let num1 = Number(reference.previousElementSibling.children[0].value);
     let num2 = Number(reference.previousElementSibling.children[1].value);
-    if (isNaN(num1) || isNaN(num2) || num1 === 0 || num2 === 0) {
+    if (isNaN(num1) || isNaN(num2) || num1 <= 0 || num2 <= 0) {
         alert('enter proper value');
         return false;
     }
