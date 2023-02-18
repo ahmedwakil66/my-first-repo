@@ -1,0 +1,173 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 1400px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+.btn-primary{
+    border: none;
+    padding: 1rem;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #1090D8;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #0f7bba;
+    }
+}
+
+
+/* Header styles here */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(16, 144, 216, 0.1);
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-bottom: 3rem;
+
+    p{
+        font-size: 1.8rem;
+    }
+
+    .h-btn{
+        width: 100px;
+    }
+}
+
+//main styles here
+main{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    
+
+    #resultDiv{
+        background-color: rgba(16, 144, 216, .3);
+        flex-grow: 1;
+        align-self: start;
+        position: sticky; top: 0;
+
+        padding: 1.5rem 1rem;
+        text-align: center;
+        border-radius: 8px;
+        border:  1px solid rgba(17, 17, 17, 0.1);
+
+        h2{
+            margin-bottom: 1.7rem;
+        }
+
+        .result-section{
+            display: flex;
+            gap: 7px;
+            justify-content: space-between;
+            align-items: baseline;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        button{
+            padding: 2px 5px;
+            font-size: .8rem;
+            width: fit-content;
+        }
+    }
+    
+    .card-container{
+        max-width: fit-content;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card{
+        width: 320px;
+        padding: 1.5rem 1rem;
+        text-align: center;
+        color: #414141;
+        border-radius: 8px;
+        border:  1px solid rgba(17, 17, 17, 0.1);
+    
+        > *{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    
+        img{
+            display: inline-block;
+            width: 90%;
+            height: 194px;
+        }
+    
+        .input-container{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        input{
+            width: 70px;
+            height: 30px;
+            padding: 3px 7px;
+            margin-left: 1rem;
+            background-color: #F1F1F1;
+            border: none;
+            border-radius: 4px;
+    
+            &:focus{
+                outline: transparent;
+            }
+        }
+    
+        input[type='checkbox']{
+            width: 20px;
+            display: inline-block;
+        }
+        
+    }
+    
+}
+
+@media screen and (max-width: 1350px) {
+    .card-container{
+        grid-template-columns: 1fr 1fr !important;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    #resultDiv{
+        flex-grow: 0 !important;
+    }
+    .card-container{
+        grid-template-columns: 1fr!important;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    #resultDiv{
+        align-self: center !important;
+        background-color: rgba(16, 144, 216, 1) !important;
+
+        button{
+            border: 1px solid white;
+        }
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+}
