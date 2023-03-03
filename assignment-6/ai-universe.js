@@ -1,3 +1,4 @@
+const sortByDateBtn = document.getElementById('sortByDate');
 const loader = document.getElementById('loader');
 const cardsDiv = document.getElementById('cards-div');
 const loadMore = document.getElementById('loadMore');
@@ -15,7 +16,25 @@ const modalAccuracyP = document.getElementById('modal-accuracy-p');
 const modalAccuracy = document.getElementById('modal-accuracy');
 
 
-
+//sort by date function
+sortByDateBtn.addEventListener('click', sortByDate);
+function sortByDate(){
+    loader.classList.remove('d-none');
+    fetch('https://openapi.programming-hero.com/api/ai/tools')
+        .then(res => res.json())
+        .then(res => {
+            const array = res.data.tools;
+            array.sort((a,b) =>{
+                a1 = new Date(a.published_in)
+                b1 = new Date(b.published_in)
+                return a1 < b1 ? -1: a1 > b1 ? 1: 0;
+            })
+            writeData(array, array.length);
+        })
+        .catch(err => console.log(err));
+        loadMore.textContent = 'loaded all items';
+        loadMore.disabled = true;
+}
 
 // fetching data
 function getData() {
@@ -102,12 +121,14 @@ loadMore.addEventListener('click', ()=> {
         .then(res => writeData(res.data.tools, res.data.tools.length))
         .catch(err => console.log(err));
         loadMore.textContent = 'Loaded all Items';
+        loadMore.disabled = 'true';
 })
 
 
 
 //write details on modal
 function writeDetailsOnModal(id){
+    modalDescription.textContent = '';
     modalFeatureUl.innerHTML = '';
     modalIntegrationUl.innerHTML = '';
     modalImg.src = '#';
