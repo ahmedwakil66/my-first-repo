@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        #loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 5;
+            background-color: rgba(0, 0, 255, 0.378);
+        }
+
+        ol {
+            list-style-position: inside;
+            padding: 0;
+        }
+
+        .card {
+            cursor: pointer;
+            padding: 1rem;
+        }
+
+        .flexi-flex {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* modal are below */
+        #pricing-div > div{
+            background-color: antiquewhite;
+            padding: .5rem 1.5rem;
+            border-radius: 7px;
+            margin: .6rem 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="loader" class="spinner-border d-none" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+
+
+    <div class="container-lg">
+        <div class="text-center mb-3">
+            <h1 class="my-3">AI Universe Hub</h1>
+            <button class="btn btn-danger">Sort by Date</button>
+        </div>
+
+        <!-- main section -->
+        <div id="cards-div" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+
+            <!-- <div class="col">
+                <div class="card h-100">
+                    <img src="https://img.olhardigital.com.br/wp-content/uploads/2023/01/chatgpt_assistente.jpg"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Features</h5>
+                        <p class="card-text">
+                        <ol class="p-0">
+                            <li>feature 1</li>
+                            <li>feature 2</li>
+                            <li>feature 3</li>
+                        </ol>
+                        </p>
+                    </div>
+                    <div class="card-footer flexi-flex">
+                        <div>
+                            <h5>ChatGPT</h5>
+                            <img src="images/calendar.svg" alt="">
+                            <small class="text-muted">11/1/2022</small>
+                        </div>
+                        <div>
+                            <img src="images/arrow-right.svg" width="30">
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+
+        <div class="text-center">
+            <button id="loadMore" class="btn btn-danger m-4">Load more</button>
+        </div>
+
+
+        <!-- modal area here-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+
+
+
+                        <div class="card-group gap-1">
+                            <div class="card">
+                              <div class="card-body p-0">
+                                <!-- <h5 class="card-title">Card title</h5> -->
+                                <h5 id="modal-description" class="card-text fw-bold">This will be the description</h5>
+
+                                <div id="pricing-div" class="d-lg-flex gap-2">
+                                    <div id="basic">price + plan</div>
+                                    <div id="pro">price + plan</div>
+                                    <div id="enterprise">price + plan</div>
+                                </div>
+
+                                <div class="d-lg-flex justify-content-between gap-2">
+                                    <div>
+                                        <h4>Features</h4>
+                                        <ul id="modal-features">
+                                            <li>list item one</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4>Integration</h4>
+                                        <ul id="modal-integration"></ul>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <p></p>
+
+                            <div class="card">
+                              <div class="position-relative">
+                                <img id="modal-img" src="#" class="card-img-top">
+                                <p id="modal-accuracy-p" class="position-absolute top-0 end-0 bg-danger text-white p-2 rounded"><span id="modal-accuracy"></span> accuracy</p>
+                              </div>
+                              <div class="card-body p-0">
+                                <h5 id="modal-input" class="card-title fw-bold">input here</h5>
+                                <p id="modal-output" class="card-text">output here.</p>
+                              </div>
+                            </div>
+                        </div>
+
+
+                        
+                        
+
+
+
+                    </div>
+                    <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Bootstrap Js Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- My Js Link -->
+    <script src="ai-universe.js"></script>
+</body>
+
+</html>
