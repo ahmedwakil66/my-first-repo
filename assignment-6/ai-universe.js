@@ -33,7 +33,6 @@ function sortByDate(){
         })
         .catch(err => console.log(err));
         loadMore.textContent = 'loaded all items';
-        loadMore.disabled = true;
 }
 
 // fetching data
