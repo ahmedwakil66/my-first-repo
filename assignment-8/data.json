@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1001,
+        "blogName": "How to become an efficient programmer",
+        "thumbnail": "images/blog1.jpg",
+        "readTime": 5,
+        "publishDate": "1/11/2022",
+        "tags": [
+            "#writer",
+            "#beginner"
+        ],
+        "writer": {
+            "name": "Adam Smith",
+            "profileImage": "images/user1.png"
+        }
+    },
+    {
+        "id": 1002,
+        "blogName": "Image processing techniques",
+        "thumbnail": "images/blog2.jpg",
+        "readTime": 4,
+        "publishDate": "22/5/2022",
+        "tags": [
+            "#software",
+            "#image"
+        ],
+        "writer": {
+            "name": "John Draper",
+            "profileImage": "images/user2.png"
+        }
+    },
+    {
+        "id": 1004,
+        "blogName": "Be a smart marketer in 7 steps",
+        "thumbnail": "images/blog4.jpg",
+        "readTime": 8,
+        "publishDate": "5/9/2020",
+        "tags": [
+            "#marketing",
+            "#business",
+            "#marketplace"
+        ],
+        "writer": {
+            "name": "Michael Copel",
+            "profileImage": "images/user4.png"
+        }
+    },
+    {
+        "id": 1003,
+        "blogName": "Learn how to do Closet Cooking",
+        "thumbnail": "images/blog3.jpg",
+        "readTime": 6,
+        "publishDate": "5/2/2020",
+        "tags": [
+            "#cook",
+            "#food",
+            "#health",
+            "#nutrition"
+        ],
+        "writer": {
+            "name": "Ernest Ferrell",
+            "profileImage": "images/user3.png"
+        }
+    }
+]
