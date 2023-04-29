@@ -17,13 +17,16 @@
             background-image: linear-gradient(to right, #393939, gray, gray, gray, gray, gray, #393939);
         }
 
+        .container{
+            max-width: 1400px;
+            margin: 2rem auto;
+        }
+
         .wrapper {
             display: flex;
             flex-wrap: wrap;
             gap: 2rem;
             justify-content: center;
-            max-width: 1400px;
-            margin: 2rem auto;
         }
 
         .badge{
@@ -69,6 +72,10 @@
             transform: scale(1.05);
         }
 
+        .centered{
+            text-align: center;
+        }
+
         @media screen and (max-width: 1150px) {
             .wrapper {
                 max-width: 95%;
@@ -91,7 +98,13 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="container centered">
+        <h1>Welcome Visitor !</h1>
+        <p>Sites that has <b><i>Express</i></b> tag run on free servers that may take around 10 seconds to start. <br>
+        Please be patient if you see blank page after opening those sites. <b>Thanks.</b></p>
+    </div>
+
+    <div class="wrapper container">
         <a class="card card-1" href="milestone-1/ph-portfolio-1.html">
             <img src="assets/portfolio-1.png" alt="portfolio-1" width="100%">
             <p>Milestone 1</p>
@@ -160,6 +173,11 @@
         <a class="card card-12" href="https://ema-john-c81a5.web.app/">
             <img src="assets/milestone-10.png" alt="cwm" width="100%">
             <p>Milestone 10 <span class="badge">React, FireBase</span></p>
+        </a>
+
+        <a class="card card-13" href="https://dragon-news-ca.netlify.app/">
+            <img src="assets/milestone-11.png" alt="dragon news" width="100%">
+            <p>Milestone 10 <span class="badge">React, FireBase, Express</span></p>
         </a>
     </div>
 </body>
